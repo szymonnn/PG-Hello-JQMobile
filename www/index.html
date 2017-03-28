@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<script src="js/pgb.js"></script>
-		<script src="cordova.js"></script>
-		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/jquery.mobile-1.4.5.min.js"></script>
-	</head>
-	<body onload="init()">
-		
-		<!-- My app main page -->
-		<div data-role="page" id="pageone">
-		  <div data-role="header">
-			<h1>Hello World!</h1>
-		  </div>
-		  <div data-role="main" class="ui-content">
-			<p>Szymon Nitecki</p>
-			<p>szymon.nitecki@ready4s.pl</p>
-			<p>Android development</p>
-			<a href="#details" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Interests</a>
-		  </div>
-		  <div data-role="footer" data-position="fixed">
-			<h1>(c) Szymon Nitecki</h1>
-		  </div> 
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<script src="js/pgb.js"></script>
+	<script src="cordova.js"></script>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body onload="init()">
+
+	<!-- My app main page -->
+	<body>
+
+		<div data-role="page">
+			<div data-role="header">
+			<h1>Tourists Attractions</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<a href="#masuria" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Masuria</a>
+				<a href="#pomerania" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Pomerania</a>
+				<a href="#tatra" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">The tatra mountains</a>
+
+				<div data-role="popup" id="masuria">
+					<p>Masuria</p>
+					<img src="img/masuria.jpg">
+				</div>
+
+				<div data-role="popup" id="pomerania">
+					<p>Pomerania</p>
+					<img src="img/pomerania.jpg">
+				</div>
+
+				<div data-role="popup" id="tatra">
+					<p>Tatra Mountains</p>
+					<img src="img/tatra.jpg">
+				</div>
+			</div>
+
+			<div data-role="footer">
+				<h1>Footer Text</h1>
+			</div>
 		</div> 
-		
-		<!-- Mobile device details page -->
-		<div data-role="page" id="details">
-			<div data-role="header" data-theme="a" data-add-back-btn="true">
-				<h1>Interests</h1>
-				    <a href="#pageone" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-back">.</a>
-			</div>
-			<div role="main" class="ui-content">
-				<p>Jestem Szymon i jestem zainteresowany komputerami.</p>
-			</div>
-		</div>		
-		
+
 	</body>
+</body>
 </html>
